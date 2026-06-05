@@ -348,14 +348,18 @@ section {
 
 .project-auth figure,
 .project-dashboard figure,
-.project-map figure {
+.project-map figure,
+.project-account figure {
     min-width: 0;
+    width: 100%;
+    justify-content: center;
 }
 
 /* Slightly reduce screenshot widths to avoid expanding the card */
 .project-auth .project-screenshot,
 .project-dashboard .project-screenshot,
-.project-map .project-screenshot {
+.project-map .project-screenshot,
+.project-account .project-screenshot {
     width: 240px;
 }
 
@@ -366,21 +370,24 @@ section {
 /* normalize card heights and limit image heights to keep cards consistent */
 .project-auth.card,
 .project-dashboard.card,
-.project-map.card {
+.project-map.card,
+.project-account.card {
     min-height: 140px;
     padding: 1.25rem;
 }
 
 .project-auth > div,
 .project-dashboard > div,
-.project-map > div {
+.project-map > div,
+.project-account > div {
     height: 100%;
     align-items: center;
 }
 
 .project-auth .project-screenshot,
 .project-dashboard .project-screenshot,
-.project-map .project-screenshot {
+.project-map .project-screenshot,
+.project-account .project-screenshot {
     max-height: 120px;
     object-fit: cover;
 }
@@ -393,14 +400,22 @@ section {
 @media (max-width: 860px) {
     .project-auth > div,
     .project-dashboard > div,
-    .project-map > div {
+    .project-map > div,
+    .project-account > div {
         grid-template-columns: 1fr;
     }
     .project-auth .project-screenshot,
     .project-dashboard .project-screenshot,
-    .project-map .project-screenshot {
+    .project-map .project-screenshot,
+    .project-account .project-screenshot {
         width: 100%;
         max-width: 360px;
+    }
+    .project-auth.card,
+    .project-dashboard.card,
+    .project-map.card,
+    .project-account.card {
+        padding: 1rem 1rem 1.25rem;
     }
 }
 
