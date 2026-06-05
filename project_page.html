@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects - Thanh's Portfolio featuring Fire Detection and Real-Time Monitoring System.">
+    <title>Projects - Thanh's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Thanh</a>
+                <ul class="nav-list">
+                    <li><a href="about_page.html">About</a></li>
+                    <li><a href="project_page.html">Projects</a></li>
+                    <li><a href="contact_page.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="container">
+            <span class="section-title">Projects</span>
+            <h2 class="section-heading">Featured project.</h2>
+            <div>
+                <h3>Fire Detection and Real-Time Monitoring System</h3>
+                <p>An IoT-based platform designed to collect, process, and visualize environmental sensor data from multiple wireless sensor nodes in real time.</p>
+                <p>The system utilizes Contiki-NG and the RPL routing protocol to simulate a wireless sensor network. Sensor data is transmitted through a Border Router and processed by a Django backend service. The backend stores sensor readings in a Neon PostgreSQL database, performs fire detection analysis, manages user authentication, and sends automated email notifications when abnormal conditions are detected.</p>
+                <p>A web-based dashboard built with HTML, CSS, JavaScript, AJAX, and Chart.js provides real-time visualization of temperature, smoke, and humidity data while allowing users to monitor the status of individual sensor nodes.</p>
+                <p><a href="https://github.com/vdtt23/Web-app-for-fire-detection-system-Django" target="_blank" rel="noreferrer">View on GitHub</a></p>
+                
+                <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Technologies & Skills Used</h4>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                    <div>
+                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Programming Languages</h5>
+                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Python • JavaScript • HTML • CSS</p>
+                    </div>
+                    <div>
+                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Backend</h5>
+                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Django • Django ORM • TCP Socket Programming</p>
+                    </div>
+                    <div>
+                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Database</h5>
+                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">PostgreSQL (Neon)</p>
+                    </div>
+                    <div>
+                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Frontend</h5>
+                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Chart.js • AJAX • Fetch API</p>
+                    </div>
+                    <div>
+                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">IoT & Networking</h5>
+                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Contiki-NG • RPL Routing Protocol • Border Router</p>
+                    </div>
+                    <div>
+                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Authentication & Security</h5>
+                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Django Authentication • Session Management • Gmail SMTP</p>
+                    </div>
+                    <div>
+                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Tools</h5>
+                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Git • Linux • VS Code</p>
+                    </div>
+                </div>
+                
+                <h4 style="margin-top: 2rem; margin-bottom: 1rem;">System Architecture Diagram</h4>
+                <p style="font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem;">A modern, theme-matching diagram with chrome-inspired gradients and hover glow for each architecture block.</p>
+                <div class="system-arch-frame">
+                    <div class="system-arch-inner">
+                        <div class="diag-row">
+                            <article class="diag-card">
+                                <span class="diag-label">Tầng Thu Thập</span>
+                                <h5>Sensor Node 1 · Sensor Node 2 · Sensor Node 3</h5>
+                                <p>Contiki-NG sensor nodes collect temperature, smoke, and humidity in a wireless mesh.</p>
+                            </article>
+                        </div>
+
+                        <div class="diag-connector"><span>RPL Mesh · 6LoWPAN / IPv6</span></div>
+
+                        <div class="diag-row">
+                            <article class="diag-card">
+                                <span class="diag-label">Tầng Mạng</span>
+                                <h5>Border Router (6LBR)</h5>
+                                <p>Gateway chuyển tiếp dữ liệu từ mạng RPL vào hệ thống backend.</p>
+                            </article>
+                        </div>
+
+                        <div class="diag-connector"><span>TCP Socket Connection</span></div>
+
+                        <div class="diag-row">
+                            <article class="diag-card">
+                                <span class="diag-label">Tầng Backend</span>
+                                <h5>TCP Socket Service → Django Core</h5>
+                                <p>Xử lý dữ liệu, xác thực, phát hiện cháy và điều phối cảnh báo.</p>
+                            </article>
+                        </div>
+
+                        <div class="diag-row diag-split">
+                            <article class="diag-card">
+                                <span class="diag-label">Tầng Dữ Liệu</span>
+                                <h5>Neon PostgreSQL</h5>
+                                <p>Lưu trữ readings theo thời gian thực, phục vụ truy vấn nhanh và báo cáo.</p>
+                            </article>
+                            <article class="diag-card">
+                                <span class="diag-label">Tầng Cảnh Báo</span>
+                                <h5>Email Alerts</h5>
+                                <p>Gửi thông báo tự động khi giá trị cảm biến vượt ngưỡng nguy hiểm.</p>
+                            </article>
+                        </div>
+
+                        <div class="diag-connector"><span>REST API Responses</span></div>
+
+                        <div class="diag-row">
+                            <article class="diag-card">
+                                <span class="diag-label">Tầng Frontend</span>
+                                <h5>Chart.js Dashboard</h5>
+                                <p>Dashboard web hiện thị biểu đồ và trạng thái node theo thời gian thực.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-auth card" style="margin-top: 2rem;">
+                    <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
+                        <div style="flex:1;min-width:260px;">
+                            <h4 style="margin:0 0 0.5rem 0;">User Authentication Interface</h4>
+                            <p style="margin:0 0 0.75rem 0;color:var(--muted);line-height:1.6;">Secure login interface developed using Django Authentication Framework. The system supports user registration, login validation, session management, password recovery, and automatic session expiration after inactivity to enhance account security.</p>
+                            <p style="margin:0;font-size:0.9rem;color:var(--muted);">Technologies: Django Authentication, Sessions, SMTP password reset, secure cookie settings, CSRF protection.</p>
+                        </div>
+                        <figure style="margin:0;display:flex;align-items:center;justify-content:center;min-width:220px;">
+                            <a href="#" class="lightbox-trigger" data-src="images/login.png" aria-label="Open login screenshot">
+                                <img src="images/login.png" alt="Login screenshot" class="project-screenshot">
+                            </a>
+                        </figure>
+                    </div>
+                    </div>
+
+                    <div class="project-dashboard card" style="margin-top: 2rem;">
+                        <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
+                            <div style="flex:1;min-width:260px;">
+                                <h4 style="margin:0 0 0.5rem 0;">Real-Time Sensor Monitoring Dashboard</h4>
+                                <p style="margin:0 0 0.75rem 0;color:var(--muted);line-height:1.6;">Interactive monitoring dashboard displaying temperature, smoke, and humidity data from multiple IoT sensor nodes. Data is retrieved from the Django backend through AJAX requests and visualized in real time using Chart.js. Each node is automatically classified into <strong>SAFE</strong>, <strong>WARNING</strong>, or <strong>FIRE</strong> states based on predefined detection thresholds.</p>
+                                <p style="margin:0;font-size:0.9rem;color:var(--muted);">Technologies: Chart.js, AJAX/Fetch, Django REST endpoints, WebSocket (optional for push updates), threshold-based classification logic.</p>
+                            </div>
+                            <figure style="margin:0;display:flex;align-items:center;justify-content:center;min-width:220px;">
+                                <a href="#" class="lightbox-trigger" data-src="images/RealtimeChart.png" aria-label="Open realtime chart screenshot">
+                                    <img src="images/RealtimeChart.png" alt="Realtime charts" class="project-screenshot">
+                                </a>
+                            </figure>
+                        </div>
+                    </div>
+                
+                <div class="project-map card" style="margin-top: 2rem;">
+                    <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
+                        <div style="flex:1;min-width:260px;">
+                            <h4 style="margin:0 0 0.5rem 0;">IoT Network Status Visualization</h4>
+                            <p style="margin:0 0 0.75rem 0;color:var(--muted);line-height:1.6;">Graphical representation of sensor node deployment and operational status within the monitored environment. Node colors indicate current conditions, allowing users to quickly identify abnormal activity and potential fire hazards across the network.</p>
+                            <p style="margin:0;font-size:0.9rem;color:var(--muted);">Technologies: Leaflet / D3.js (optional), SVG overlays, realtime status layers from backend endpoints.</p>
+                        </div>
+                        <figure style="margin:0;display:flex;align-items:center;justify-content:center;min-width:220px;">
+                            <a href="#" class="lightbox-trigger" data-src="images/NodeMap.png" aria-label="Open node map screenshot">
+                                <img src="images/NodeMap.png" alt="Node Map" class="project-screenshot map-screenshot">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+                
+                <div class="project-account card" style="margin-top: 2rem;">
+                    <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
+                        <div style="flex:1;min-width:260px;">
+                            <h4 style="margin:0 0 0.5rem 0;">User Profile and Account Management</h4>
+                            <p style="margin:0 0 0.75rem 0;color:var(--muted);line-height:1.6;">Account management module enabling users to update personal information, change credentials, and manage account settings. Password modifications require current password verification, ensuring secure account administration.</p>
+                            <p style="margin:0;font-size:0.9rem;color:var(--muted);">Technologies: Django Forms, Authentication, Secure Password Change, Email verification, Account settings API.</p>
+                        </div>
+                        <figure style="margin:0;display:flex;align-items:center;justify-content:center;min-width:220px;">
+                            <a href="#" class="lightbox-trigger" data-src="images/AccManagement.png" aria-label="Open account info screenshot">
+                                <img src="images/AccManagement.png" alt="Account information" class="project-screenshot account-screenshot">
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Thanh. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Lightbox modal -->
+    <div id="lightboxOverlay" class="lightbox-overlay" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close">✕</button>
+        <img class="lightbox-img" src="" alt="Expanded screenshot">
+    </div>
+
+    <script>
+    (function(){
+        const triggers = document.querySelectorAll('.lightbox-trigger');
+        const overlay = document.getElementById('lightboxOverlay');
+        const img = overlay.querySelector('.lightbox-img');
+        const closeBtn = overlay.querySelector('.lightbox-close');
+
+        function open(src){
+            img.src = src;
+            overlay.classList.add('visible');
+            overlay.setAttribute('aria-hidden','false');
+        }
+
+        function close(){
+            overlay.classList.remove('visible');
+            overlay.setAttribute('aria-hidden','true');
+            img.src = '';
+        }
+
+        triggers.forEach(t => t.addEventListener('click', function(e){
+            e.preventDefault();
+            const src = this.dataset.src || (this.querySelector('img') && this.querySelector('img').src);
+            if(src) open(src);
+        }));
+
+        overlay.addEventListener('click', function(e){
+            if(e.target === overlay || e.target === closeBtn) close();
+        });
+
+        document.addEventListener('keyup', function(e){ if(e.key === 'Escape') close(); });
+    })();
+    </script>
+</body>
+</html>
