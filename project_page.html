@@ -15,6 +15,7 @@
                 <ul class="nav-list">
                     <li><a href="about_page.html">About</a></li>
                     <li><a href="project_page.html">Projects</a></li>
+                    <li><a href="personal_work.html">Work</a></li>
                     <li><a href="contact_page.html">Contact</a></li>
                 </ul>
             </nav>
@@ -30,42 +31,42 @@
                 <p>An IoT-based platform designed to collect, process, and visualize environmental sensor data from multiple wireless sensor nodes in real time.</p>
                 <p>The system utilizes Contiki-NG and the RPL routing protocol to simulate a wireless sensor network. Sensor data is transmitted through a Border Router and processed by a Django backend service. The backend stores sensor readings in a Neon PostgreSQL database, performs fire detection analysis, manages user authentication, and sends automated email notifications when abnormal conditions are detected.</p>
                 <p>A web-based dashboard built with HTML, CSS, JavaScript, AJAX, and Chart.js provides real-time visualization of temperature, smoke, and humidity data while allowing users to monitor the status of individual sensor nodes.</p>
-                <p><a href="https://github.com/vdtt23/Web-app-for-fire-detection-system-Django" target="_blank" rel="noreferrer">View on GitHub</a></p>
+                <p><a href="https://github.com/vdtt23/Web-app-for-fire-detection-system-Django" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
                 
-                <h4 style="margin-top: 2rem; margin-bottom: 1rem;">Technologies & Skills Used</h4>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
-                    <div>
-                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Programming Languages</h5>
-                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Python • JavaScript • HTML • CSS</p>
+                <h4 class="project-section-heading">Technologies & Skills Used</h4>
+                <div class="project-info-grid">
+                    <div class="project-info-item">
+                        <h5>Programming Languages</h5>
+                        <p>Python • JavaScript • HTML • CSS</p>
                     </div>
-                    <div>
-                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Backend</h5>
-                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Django • Django ORM • TCP Socket Programming</p>
+                    <div class="project-info-item">
+                        <h5>Backend</h5>
+                        <p>Django • Django ORM • TCP Socket Programming</p>
                     </div>
-                    <div>
-                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Database</h5>
-                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">PostgreSQL (Neon)</p>
+                    <div class="project-info-item">
+                        <h5>Database</h5>
+                        <p>PostgreSQL (Neon)</p>
                     </div>
-                    <div>
-                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Frontend</h5>
-                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Chart.js • AJAX • Fetch API</p>
+                    <div class="project-info-item">
+                        <h5>Frontend</h5>
+                        <p>Chart.js • AJAX • Fetch API</p>
                     </div>
-                    <div>
-                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">IoT & Networking</h5>
-                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Contiki-NG • RPL Routing Protocol • Border Router</p>
+                    <div class="project-info-item">
+                        <h5>IoT & Networking</h5>
+                        <p>Contiki-NG • RPL Routing Protocol • Border Router</p>
                     </div>
-                    <div>
-                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Authentication & Security</h5>
-                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Django Authentication • Session Management • Gmail SMTP</p>
+                    <div class="project-info-item">
+                        <h5>Authentication & Security</h5>
+                        <p>Django Authentication • Session Management • Gmail SMTP</p>
                     </div>
-                    <div>
-                        <h5 style="font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 0.5rem;">Tools</h5>
-                        <p style="font-size: 0.85rem; color: var(--muted); line-height: 1.6;">Git • Linux • VS Code</p>
+                    <div class="project-info-item">
+                        <h5>Tools</h5>
+                        <p>Git • Linux • VS Code</p>
                     </div>
                 </div>
                 
-                <h4 style="margin-top: 2rem; margin-bottom: 1rem;">System Architecture Diagram</h4>
-                <p style="font-size: 0.9rem; color: var(--muted); line-height: 1.6; margin-bottom: 1rem;">A modern, theme-matching diagram with chrome-inspired gradients and hover glow for each architecture block.</p>
+                <h4 class="project-section-heading">System Architecture Diagram</h4>
+                <p class="project-note">A modern, theme-matching diagram with chrome-inspired gradients and hover glow for each architecture block.</p>
                 <div class="system-arch-frame">
                     <div class="system-arch-inner">
                         <div class="diag-row">
@@ -121,29 +122,29 @@
                     </div>
                 </div>
                 
-                <div class="project-auth card" style="margin-top: 2rem;">
-                    <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
-                        <div style="flex:1;min-width:260px;">
-                            <h4 style="margin:0 0 0.5rem 0;">User Authentication Interface</h4>
-                            <p style="margin:0 0 0.75rem 0;color:var(--muted);line-height:1.6;">Secure login interface developed using Django Authentication Framework. The system supports user registration, login validation, session management, password recovery, and automatic session expiration after inactivity to enhance account security.</p>
-                            <p style="margin:0;font-size:0.9rem;color:var(--muted);">Technologies: Django Authentication, Sessions, SMTP password reset, secure cookie settings, CSRF protection.</p>
+                <div class="project-auth card project-feature-card">
+                    <div class="project-card-row">
+                        <div class="project-card-panel">
+                            <h4 class="project-card-title">User Authentication Interface</h4>
+                            <p class="project-card-description">Secure login interface developed using Django Authentication Framework. The system supports user registration, login validation, session management, password recovery, and automatic session expiration after inactivity to enhance account security.</p>
+                            <p class="project-card-subtext">Technologies: Django Authentication, Sessions, SMTP password reset, secure cookie settings, CSRF protection.</p>
                         </div>
-                        <figure style="margin:0;display:flex;align-items:center;justify-content:center;min-width:220px;">
+                        <figure class="project-card-figure">
                             <a href="#" class="lightbox-trigger" data-src="images/login.png" aria-label="Open login screenshot">
                                 <img src="images/login.png" alt="Login screenshot" class="project-screenshot">
                             </a>
                         </figure>
                     </div>
-                    </div>
+                </div>
 
-                    <div class="project-dashboard card" style="margin-top: 2rem;">
-                        <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
-                            <div style="flex:1;min-width:260px;">
-                                <h4 style="margin:0 0 0.5rem 0;">Real-Time Sensor Monitoring Dashboard</h4>
-                                <p style="margin:0 0 0.75rem 0;color:var(--muted);line-height:1.6;">Interactive monitoring dashboard displaying temperature, smoke, and humidity data from multiple IoT sensor nodes. Data is retrieved from the Django backend through AJAX requests and visualized in real time using Chart.js. Each node is automatically classified into <strong>SAFE</strong>, <strong>WARNING</strong>, or <strong>FIRE</strong> states based on predefined detection thresholds.</p>
-                                <p style="margin:0;font-size:0.9rem;color:var(--muted);">Technologies: Chart.js, AJAX/Fetch, Django REST endpoints, WebSocket (optional for push updates), threshold-based classification logic.</p>
+                    <div class="project-dashboard card project-feature-card">
+                        <div class="project-card-row">
+                            <div class="project-card-panel">
+                                <h4 class="project-card-title">Real-Time Sensor Monitoring Dashboard</h4>
+                                <p class="project-card-description">Interactive monitoring dashboard displaying temperature, smoke, and humidity data from multiple IoT sensor nodes. Data is retrieved from the Django backend through AJAX requests and visualized in real time using Chart.js. Each node is automatically classified into <strong>SAFE</strong>, <strong>WARNING</strong>, or <strong>FIRE</strong> states based on predefined detection thresholds.</p>
+                                <p class="project-card-subtext">Technologies: Chart.js, AJAX/Fetch, Django REST endpoints, WebSocket (optional for push updates), threshold-based classification logic.</p>
                             </div>
-                            <figure style="margin:0;display:flex;align-items:center;justify-content:center;min-width:220px;">
+                            <figure class="project-card-figure">
                                 <a href="#" class="lightbox-trigger" data-src="images/RealtimeChart.png" aria-label="Open realtime chart screenshot">
                                     <img src="images/RealtimeChart.png" alt="Realtime charts" class="project-screenshot">
                                 </a>
@@ -151,14 +152,14 @@
                         </div>
                     </div>
                 
-                <div class="project-map card" style="margin-top: 2rem;">
-                    <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
-                        <div style="flex:1;min-width:260px;">
-                            <h4 style="margin:0 0 0.5rem 0;">IoT Network Status Visualization</h4>
-                            <p style="margin:0 0 0.75rem 0;color:var(--muted);line-height:1.6;">Graphical representation of sensor node deployment and operational status within the monitored environment. Node colors indicate current conditions, allowing users to quickly identify abnormal activity and potential fire hazards across the network.</p>
-                            <p style="margin:0;font-size:0.9rem;color:var(--muted);">Technologies: Leaflet / D3.js (optional), SVG overlays, realtime status layers from backend endpoints.</p>
+                <div class="project-map card project-feature-card">
+                    <div class="project-card-row">
+                        <div class="project-card-panel">
+                            <h4 class="project-card-title">IoT Network Status Visualization</h4>
+                            <p class="project-card-description">Graphical representation of sensor node deployment and operational status within the monitored environment. Node colors indicate current conditions, allowing users to quickly identify abnormal activity and potential fire hazards across the network.</p>
+                            <p class="project-card-subtext">Technologies: Leaflet / D3.js (optional), SVG overlays, realtime status layers from backend endpoints.</p>
                         </div>
-                        <figure style="margin:0;display:flex;align-items:center;justify-content:center;min-width:220px;">
+                        <figure class="project-card-figure">
                             <a href="#" class="lightbox-trigger" data-src="images/NodeMap.png" aria-label="Open node map screenshot">
                                 <img src="images/NodeMap.png" alt="Node Map" class="project-screenshot map-screenshot">
                             </a>
@@ -166,14 +167,14 @@
                     </div>
                 </div>
                 
-                <div class="project-account card" style="margin-top: 2rem;">
-                    <div style="display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap;">
-                        <div style="flex:1;min-width:260px;">
-                            <h4 style="margin:0 0 0.5rem 0;">User Profile and Account Management</h4>
-                            <p style="margin:0 0 0.75rem 0;color:var(--muted);line-height:1.6;">Account management module enabling users to update personal information, change credentials, and manage account settings. Password modifications require current password verification, ensuring secure account administration.</p>
-                            <p style="margin:0;font-size:0.9rem;color:var(--muted);">Technologies: Django Forms, Authentication, Secure Password Change, Email verification, Account settings API.</p>
+                <div class="project-account card project-feature-card">
+                    <div class="project-card-row">
+                        <div class="project-card-panel">
+                            <h4 class="project-card-title">User Profile and Account Management</h4>
+                            <p class="project-card-description">Account management module enabling users to update personal information, change credentials, and manage account settings. Password modifications require current password verification, ensuring secure account administration.</p>
+                            <p class="project-card-subtext">Technologies: Django Forms, Authentication, Secure Password Change, Email verification, Account settings API.</p>
                         </div>
-                        <figure style="margin:0;display:flex;align-items:center;justify-content:center;min-width:220px;">
+                        <figure class="project-card-figure">
                             <a href="#" class="lightbox-trigger" data-src="images/AccManagement.png" aria-label="Open account info screenshot">
                                 <img src="images/AccManagement.png" alt="Account information" class="project-screenshot account-screenshot">
                             </a>
